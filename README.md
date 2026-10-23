@@ -228,7 +228,9 @@ coordinator.set(.main)   // clears the stack and switches the root
 
 ```
 SwiftUI-Coordinator/
+├── LICENSE
 ├── Package.swift
+├── README.md
 └── Sources/
     └── Coordinator/
         └── Coordinator.swift   // Coordinator protocol + default implementations
@@ -236,4 +238,4 @@ SwiftUI-Coordinator/
 
 ## License
 
-Add a license of your choice (e.g. MIT) in a `LICENSE` file.
+SwiftUI-Coordinator is available under the MIT license. See [LICENSE](LICENSE) for details.
