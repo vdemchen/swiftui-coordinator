@@ -23,19 +23,23 @@ Swift tools version 6.4 (Xcode with Swift 6.4 or later).
 
 ### Swift Package Manager
 
-In Xcode: **File → Add Package Dependencies…** and enter the repository URL.
+In Xcode: **File → Add Package Dependencies…** and enter the repository URL:
+
+```
+https://github.com/vdemchen/swiftui-coordinator.git
+```
 
 Or add it to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/<owner>/SwiftUI-Coordinator.git", branch: "main")
+    .package(url: "https://github.com/vdemchen/swiftui-coordinator.git", from: "1.0.0")
 ],
 targets: [
     .target(
-        name: "MyApp",
+        name: "YourTarget",
         dependencies: [
-            .product(name: "SwiftUI-Coordinator", package: "SwiftUI-Coordinator")
+            .product(name: "SwiftUI-Coordinator", package: "swiftui-coordinator")
         ]
     )
 ]
@@ -236,6 +240,10 @@ SwiftUI-Coordinator/
         └── Coordinator.swift   // Coordinator protocol + default implementations
 ```
 
+## Author
+
+**Vladyslav Demchenko** · [@vdemchen](https://github.com/vdemchen)
+
 ## License
 
-SwiftUI-Coordinator is available under the MIT license. See [LICENSE](LICENSE) for details.
+SwiftUI-Coordinator is available under the MIT License. See [LICENSE](LICENSE) for details.
